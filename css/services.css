@@ -1,0 +1,133 @@
+/* Services Page Styles */
+.services-page {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+.services-hero {
+  background-color: #f8f3ee;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-hero h1 {
+  font-size: 2.8rem;
+  color: #2a363b;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.services-hero .subheading {
+  font-size: 1.2rem;
+  color: #6d7a7f;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: #f0e6dd;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e84a5f;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2a363b;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #6d7a7f;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.service-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e84a5f;
+  margin-bottom: 25px;
+}
+
+.btn-learn-more {
+  display: inline-block;
+  background: #2a363b;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+  background: #e84a5f;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .services-hero {
+    padding: 60px 0;
+  }
+  
+  .services-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: 25px 20px;
+  }
+  
+  .services-hero h1 {
+    font-size: 1.8rem;
+  }
+}
